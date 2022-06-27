@@ -37,8 +37,7 @@ public class Report {
 
 	}
 	@Parameters({"browser"})
-
-	@BeforeClass
+	@BeforeTest
 	public void beforeClass(String browser) throws IOException {
 		Common.openURL(browser);
 
@@ -49,10 +48,6 @@ public class Report {
 		report.endTest(logger);
 		report.flush();
 	}
-	@BeforeTest
-	public void setUp() throws IOException {
-
-	}
-
+	
 
 }
