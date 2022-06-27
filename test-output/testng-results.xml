@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="4" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-15T16:09:43 IST" name="Suite" finished-at="2022-06-15T16:10:17 IST" duration-ms="34273">
+    <groups>
+      <group name="regression">
+        <method signature="TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa]" name="searching_products" class="base.TestSctript"/>
+        <method signature="TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66]" name="searching_products" class="base.TestSctript"/>
+      </group> <!-- regression -->
+      <group name="home">
+        <method signature="TestSctript.Homepage()[pri:2, instance:base.TestSctript@50b472aa]" name="Homepage" class="base.TestSctript"/>
+        <method signature="TestSctript.Homepage()[pri:2, instance:base.TestSctript@7fa98a66]" name="Homepage" class="base.TestSctript"/>
+      </group> <!-- home -->
+    </groups>
+    <test started-at="2022-06-15T16:09:43 IST" name="Test" finished-at="2022-06-15T16:09:54 IST" duration-ms="10744">
+      <class name="base.TestSctript">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:43 IST" name="setUp" finished-at="2022-06-15T16:09:49 IST" duration-ms="5857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[browserName1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:49 IST" name="beforeClass" finished-at="2022-06-15T16:09:49 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:49 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:09:50 IST" duration-ms="672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Watches]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searching_products -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:50 IST" name="afterMethod" finished-at="2022-06-15T16:09:50 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searching_products status=SUCCESS method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:50 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:09:50 IST" duration-ms="481" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Caps]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at pages.Common.assertTitle(Common.java:42)
+at base.TestSctript.searching_products(TestSctript.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searching_products -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:50 IST" name="afterMethod" finished-at="2022-06-15T16:09:51 IST" duration-ms="372" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:51 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:09:51 IST" duration-ms="73" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kurti]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at pages.Common.assertTitle(Common.java:42)
+at base.TestSctript.searching_products(TestSctript.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searching_products -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:51 IST" name="afterMethod" finished-at="2022-06-15T16:09:51 IST" duration-ms="331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:51 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:09:51 IST" duration-ms="56" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Saree]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at pages.Common.assertTitle(Common.java:42)
+at base.TestSctript.searching_products(TestSctript.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searching_products -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:51 IST" name="afterMethod" finished-at="2022-06-15T16:09:51 IST" duration-ms="262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="Homepage()[pri:2, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:51 IST" name="Homepage" finished-at="2022-06-15T16:09:53 IST" duration-ms="2086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Homepage -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:53 IST" name="afterClass" finished-at="2022-06-15T16:09:54 IST" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:53 IST" name="afterMethod" finished-at="2022-06-15T16:09:53 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Homepage status=SUCCESS method=TestSctript.Homepage()[pri:2, instance:base.TestSctript@50b472aa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- base.TestSctript -->
+    </test> <!-- Test -->
+    <test started-at="2022-06-15T16:09:54 IST" name="Test2" finished-at="2022-06-15T16:10:17 IST" duration-ms="23456">
+      <class name="base.TestSctript">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:09:54 IST" name="setUp" finished-at="2022-06-15T16:10:01 IST" duration-ms="7064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[browserName2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:01 IST" name="beforeClass" finished-at="2022-06-15T16:10:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:01 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:10:02 IST" duration-ms="917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Watches]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searching_products -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:02 IST" name="afterMethod" finished-at="2022-06-15T16:10:02 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searching_products status=SUCCESS method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:02 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:10:02 IST" duration-ms="569" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Caps]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at pages.Common.assertTitle(Common.java:42)
+at base.TestSctript.searching_products(TestSctript.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searching_products -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:02 IST" name="afterMethod" finished-at="2022-06-15T16:10:03 IST" duration-ms="150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:03 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:10:03 IST" duration-ms="231" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kurti]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at pages.Common.assertTitle(Common.java:42)
+at base.TestSctript.searching_products(TestSctript.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searching_products -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:03 IST" name="afterMethod" finished-at="2022-06-15T16:10:03 IST" duration-ms="359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:03 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:10:03 IST" duration-ms="48" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Saree]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at pages.Common.assertTitle(Common.java:42)
+at base.TestSctript.searching_products(TestSctript.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searching_products -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:03 IST" name="afterMethod" finished-at="2022-06-15T16:10:03 IST" duration-ms="269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="Homepage()[pri:2, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:03 IST" name="Homepage" finished-at="2022-06-15T16:10:17 IST" duration-ms="13740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Homepage -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:17 IST" name="afterMethod" finished-at="2022-06-15T16:10:17 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Homepage status=SUCCESS method=TestSctript.Homepage()[pri:2, instance:base.TestSctript@7fa98a66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:17 IST" name="afterClass" finished-at="2022-06-15T16:10:17 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- base.TestSctript -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>
