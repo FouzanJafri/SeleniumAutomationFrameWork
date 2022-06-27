@@ -36,9 +36,12 @@ public class Report {
 		}
 
 	}
+	@Parameters({"browser"})
 
 	@BeforeClass
-	public void beforeClass() {
+	public void beforeClass(String browser) throws IOException {
+		Common.openURL(browser);
+
 	}
 
 	@AfterClass
@@ -46,10 +49,8 @@ public class Report {
 		report.endTest(logger);
 		report.flush();
 	}
-	@Parameters({"browser"})
 	@BeforeTest
-	public void setUp(String browser) throws IOException {
-		Common.openURL(browser);
+	public void setUp() throws IOException {
 
 	}
 
