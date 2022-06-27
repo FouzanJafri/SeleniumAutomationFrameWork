@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="10" passed="4" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-15T16:09:43 IST" name="Suite" finished-at="2022-06-15T16:10:17 IST" duration-ms="34273">
+  <suite started-at="2022-06-27T15:12:35 IST" name="Suite" finished-at="2022-06-27T15:12:57 IST" duration-ms="21907">
     <groups>
       <group name="regression">
-        <method signature="TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa]" name="searching_products" class="base.TestSctript"/>
-        <method signature="TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66]" name="searching_products" class="base.TestSctript"/>
+        <method signature="TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@1817d444]" name="searching_products" class="base.TestSctript"/>
+        <method signature="TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@62150f9e]" name="searching_products" class="base.TestSctript"/>
       </group> <!-- regression -->
       <group name="home">
-        <method signature="TestSctript.Homepage()[pri:2, instance:base.TestSctript@50b472aa]" name="Homepage" class="base.TestSctript"/>
-        <method signature="TestSctript.Homepage()[pri:2, instance:base.TestSctript@7fa98a66]" name="Homepage" class="base.TestSctript"/>
+        <method signature="TestSctript.Homepage()[pri:2, instance:base.TestSctript@1817d444]" name="Homepage" class="base.TestSctript"/>
+        <method signature="TestSctript.Homepage()[pri:2, instance:base.TestSctript@62150f9e]" name="Homepage" class="base.TestSctript"/>
       </group> <!-- home -->
     </groups>
-    <test started-at="2022-06-15T16:09:43 IST" name="Test" finished-at="2022-06-15T16:09:54 IST" duration-ms="10744">
+    <test started-at="2022-06-27T15:12:35 IST" name="Test" finished-at="2022-06-27T15:12:46 IST" duration-ms="11283">
       <class name="base.TestSctript">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:43 IST" name="setUp" finished-at="2022-06-15T16:09:49 IST" duration-ms="5857" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:base.TestSctript@1817d444]" started-at="2022-06-27T15:12:35 IST" name="beforeClass" finished-at="2022-06-27T15:12:42 IST" duration-ms="6605" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,12 +25,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:49 IST" name="beforeClass" finished-at="2022-06-15T16:09:49 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:49 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:09:50 IST" duration-ms="672" status="PASS">
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@1817d444]" started-at="2022-06-27T15:12:42 IST" name="searching_products" data-provider="data" finished-at="2022-06-27T15:12:42 IST" duration-ms="577" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,18 +37,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searching_products -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:50 IST" name="afterMethod" finished-at="2022-06-15T16:09:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@1817d444]" started-at="2022-06-27T15:12:42 IST" name="afterMethod" finished-at="2022-06-27T15:12:42 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searching_products status=SUCCESS method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa] output={null}]]]>
+                <![CDATA[[TestResult name=searching_products status=SUCCESS method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@1817d444] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:50 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:09:50 IST" duration-ms="481" status="FAIL">
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@1817d444]" started-at="2022-06-27T15:12:42 IST" name="searching_products" data-provider="data" finished-at="2022-06-27T15:12:43 IST" duration-ms="358" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -106,18 +102,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searching_products -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:50 IST" name="afterMethod" finished-at="2022-06-15T16:09:51 IST" duration-ms="372" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@1817d444]" started-at="2022-06-27T15:12:43 IST" name="afterMethod" finished-at="2022-06-27T15:12:43 IST" duration-ms="203" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa] output={null}]]]>
+                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@1817d444] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:51 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:09:51 IST" duration-ms="73" status="FAIL">
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@1817d444]" started-at="2022-06-27T15:12:43 IST" name="searching_products" data-provider="data" finished-at="2022-06-27T15:12:43 IST" duration-ms="73" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -171,18 +167,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searching_products -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:51 IST" name="afterMethod" finished-at="2022-06-15T16:09:51 IST" duration-ms="331" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@1817d444]" started-at="2022-06-27T15:12:43 IST" name="afterMethod" finished-at="2022-06-27T15:12:43 IST" duration-ms="352" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa] output={null}]]]>
+                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@1817d444] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:51 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:09:51 IST" duration-ms="56" status="FAIL">
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@1817d444]" started-at="2022-06-27T15:12:43 IST" name="searching_products" data-provider="data" finished-at="2022-06-27T15:12:43 IST" duration-ms="53" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -236,41 +232,41 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searching_products -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:51 IST" name="afterMethod" finished-at="2022-06-15T16:09:51 IST" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@1817d444]" started-at="2022-06-27T15:12:43 IST" name="afterMethod" finished-at="2022-06-27T15:12:44 IST" duration-ms="379" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@50b472aa] output={null}]]]>
+                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@1817d444] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="Homepage()[pri:2, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:51 IST" name="Homepage" finished-at="2022-06-15T16:09:53 IST" duration-ms="2086" status="PASS">
+        <test-method signature="Homepage()[pri:2, instance:base.TestSctript@1817d444]" started-at="2022-06-27T15:12:44 IST" name="Homepage" finished-at="2022-06-27T15:12:46 IST" duration-ms="2107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Homepage -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:53 IST" name="afterClass" finished-at="2022-06-15T16:09:54 IST" duration-ms="463" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@50b472aa]" started-at="2022-06-15T16:09:53 IST" name="afterMethod" finished-at="2022-06-15T16:09:53 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@1817d444]" started-at="2022-06-27T15:12:46 IST" name="afterMethod" finished-at="2022-06-27T15:12:46 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Homepage status=SUCCESS method=TestSctript.Homepage()[pri:2, instance:base.TestSctript@50b472aa] output={null}]]]>
+                <![CDATA[[TestResult name=Homepage status=SUCCESS method=TestSctript.Homepage()[pri:2, instance:base.TestSctript@1817d444] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:base.TestSctript@1817d444]" started-at="2022-06-27T15:12:46 IST" name="afterClass" finished-at="2022-06-27T15:12:46 IST" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
       </class> <!-- base.TestSctript -->
     </test> <!-- Test -->
-    <test started-at="2022-06-15T16:09:54 IST" name="Test2" finished-at="2022-06-15T16:10:17 IST" duration-ms="23456">
+    <test started-at="2022-06-27T15:12:46 IST" name="Test2" finished-at="2022-06-27T15:12:57 IST" duration-ms="10562">
       <class name="base.TestSctript">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:09:54 IST" name="setUp" finished-at="2022-06-15T16:10:01 IST" duration-ms="7064" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:base.TestSctript@62150f9e]" started-at="2022-06-27T15:12:46 IST" name="beforeClass" finished-at="2022-06-27T15:12:53 IST" duration-ms="6551" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -280,12 +276,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:01 IST" name="beforeClass" finished-at="2022-06-15T16:10:01 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:01 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:10:02 IST" duration-ms="917" status="PASS">
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@62150f9e]" started-at="2022-06-27T15:12:53 IST" name="searching_products" data-provider="data" finished-at="2022-06-27T15:12:54 IST" duration-ms="549" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -296,18 +288,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searching_products -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:02 IST" name="afterMethod" finished-at="2022-06-15T16:10:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@62150f9e]" started-at="2022-06-27T15:12:54 IST" name="afterMethod" finished-at="2022-06-27T15:12:54 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searching_products status=SUCCESS method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66] output={null}]]]>
+                <![CDATA[[TestResult name=searching_products status=SUCCESS method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@62150f9e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:02 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:10:02 IST" duration-ms="569" status="FAIL">
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@62150f9e]" started-at="2022-06-27T15:12:54 IST" name="searching_products" data-provider="data" finished-at="2022-06-27T15:12:54 IST" duration-ms="372" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -315,20 +307,39 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=103.0.1264.37)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'NSL-6578', ip: '10.95.1.46', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 103.0.1264.37, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:51608}, msedge: {msedgedriverVersion: 102.0.1245.33 (41285f1c5672..., userDataDir: C:\Users\KATYAY~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 032195e0160251366422f872b9f9fa6a]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Online Shopping Site for Fashion, Electronics, Home & More | Meesho] but found [Buy Watches Online at best prices at Meesho]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at pages.Common.assertTitle(Common.java:42)
-at base.TestSctript.searching_products(TestSctript.java:20)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=103.0.1264.37)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'NSL-6578', ip: '10.95.1.46', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 103.0.1264.37, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:51608}, msedge: {msedgedriverVersion: 102.0.1245.33 (41285f1c5672..., userDataDir: C:\Users\KATYAY~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 032195e0160251366422f872b9f9fa6a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+at pages.Common.searchProduct(Common.java:33)
+at base.TestSctript.searching_products(TestSctript.java:21)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -357,22 +368,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searching_products -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:02 IST" name="afterMethod" finished-at="2022-06-15T16:10:03 IST" duration-ms="150" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@62150f9e]" started-at="2022-06-27T15:12:54 IST" name="afterMethod" finished-at="2022-06-27T15:12:54 IST" duration-ms="182" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66] output={null}]]]>
+                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@62150f9e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:03 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:10:03 IST" duration-ms="231" status="FAIL">
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@62150f9e]" started-at="2022-06-27T15:12:54 IST" name="searching_products" data-provider="data" finished-at="2022-06-27T15:12:54 IST" duration-ms="53" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -426,18 +437,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searching_products -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:03 IST" name="afterMethod" finished-at="2022-06-15T16:10:03 IST" duration-ms="359" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@62150f9e]" started-at="2022-06-27T15:12:54 IST" name="afterMethod" finished-at="2022-06-27T15:12:54 IST" duration-ms="156" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66] output={null}]]]>
+                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@62150f9e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:03 IST" name="searching_products" data-provider="data" finished-at="2022-06-15T16:10:03 IST" duration-ms="48" status="FAIL">
+        <test-method signature="searching_products(java.lang.String)[pri:1, instance:base.TestSctript@62150f9e]" started-at="2022-06-27T15:12:54 IST" name="searching_products" data-provider="data" finished-at="2022-06-27T15:12:54 IST" duration-ms="52" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -491,33 +502,33 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searching_products -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:03 IST" name="afterMethod" finished-at="2022-06-15T16:10:03 IST" duration-ms="269" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@62150f9e]" started-at="2022-06-27T15:12:54 IST" name="afterMethod" finished-at="2022-06-27T15:12:55 IST" duration-ms="167" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@7fa98a66] output={null}]]]>
+                <![CDATA[[TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.String)[pri:1, instance:base.TestSctript@62150f9e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="Homepage()[pri:2, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:03 IST" name="Homepage" finished-at="2022-06-15T16:10:17 IST" duration-ms="13740" status="PASS">
+        <test-method signature="Homepage()[pri:2, instance:base.TestSctript@62150f9e]" started-at="2022-06-27T15:12:55 IST" name="Homepage" finished-at="2022-06-27T15:12:57 IST" duration-ms="2370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Homepage -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:17 IST" name="afterMethod" finished-at="2022-06-15T16:10:17 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:base.TestSctript@62150f9e]" started-at="2022-06-27T15:12:57 IST" name="afterMethod" finished-at="2022-06-27T15:12:57 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Homepage status=SUCCESS method=TestSctript.Homepage()[pri:2, instance:base.TestSctript@7fa98a66] output={null}]]]>
+                <![CDATA[[TestResult name=Homepage status=SUCCESS method=TestSctript.Homepage()[pri:2, instance:base.TestSctript@62150f9e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:base.TestSctript@7fa98a66]" started-at="2022-06-15T16:10:17 IST" name="afterClass" finished-at="2022-06-15T16:10:17 IST" duration-ms="90" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:base.TestSctript@62150f9e]" started-at="2022-06-27T15:12:57 IST" name="afterClass" finished-at="2022-06-27T15:12:57 IST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

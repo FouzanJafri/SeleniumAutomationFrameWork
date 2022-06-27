@@ -10,7 +10,6 @@
       <class name="base.TestSctript">
         <methods>
           <include name="beforeClass"/>
-          <include name="setUp"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
           <include name="searching_products" invocation-numbers="1 2 3"/>
@@ -24,7 +23,6 @@
       <class name="base.TestSctript">
         <methods>
           <include name="beforeClass"/>
-          <include name="setUp"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
           <include name="searching_products" invocation-numbers="1 2 3"/>

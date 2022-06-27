@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Assesment\AssesmentByKatyayan\suites\testng.xml</span>
+                    <span>C:\Assesment\TestNGAssesmentByKatyayan\suites\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,16 +104,6 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="base.TestSctript" class="method navigator-link" hash-for-method="searching_products(Saree)">searching_products(Saree)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="base.TestSctript" class="method navigator-link" hash-for-method="searching_products(Caps)">searching_products(Caps)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="base.TestSctript" class="method navigator-link" hash-for-method="searching_products(Kurti)">searching_products(Kurti)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -125,6 +115,16 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="base.TestSctript" class="method navigator-link" hash-for-method="searching_products(Saree)">searching_products(Saree)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="base.TestSctript" class="method navigator-link" hash-for-method="searching_products(Saree)">searching_products(Saree)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="base.TestSctript" class="method navigator-link" hash-for-method="searching_products(Caps)">searching_products(Caps)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -181,34 +181,6 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="searching_products(Saree)">
-                  </a> <!-- searching_products(Saree) -->
-                  <span class="method-name">searching_products</span>
-                  <span class="parameters">(Saree)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Online Shopping Site for Fashion, Electronics, Home &amp; More | Meesho] but found [Buy Watches Online at best prices at Meesho]
-	at pages.Common.assertTitle(Common.java:42)
-	at base.TestSctript.searching_products(TestSctript.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searching_products(Caps)">
-                  </a> <!-- searching_products(Caps) -->
-                  <span class="method-name">searching_products</span>
-                  <span class="parameters">(Caps)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Online Shopping Site for Fashion, Electronics, Home &amp; More | Meesho] but found [Buy Watches Online at best prices at Meesho]
-	at pages.Common.assertTitle(Common.java:42)
-	at base.TestSctript.searching_products(TestSctript.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="searching_products(Kurti)">
                   </a> <!-- searching_products(Kurti) -->
                   <span class="method-name">searching_products</span>
@@ -246,6 +218,49 @@
 	at base.TestSctript.searching_products(TestSctript.java:20)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searching_products(Saree)">
+                  </a> <!-- searching_products(Saree) -->
+                  <span class="method-name">searching_products</span>
+                  <span class="parameters">(Saree)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Online Shopping Site for Fashion, Electronics, Home &amp; More | Meesho] but found [Buy Watches Online at best prices at Meesho]
+	at pages.Common.assertTitle(Common.java:42)
+	at base.TestSctript.searching_products(TestSctript.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searching_products(Caps)">
+                  </a> <!-- searching_products(Caps) -->
+                  <span class="method-name">searching_products</span>
+                  <span class="parameters">(Caps)</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=103.0.1264.37)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.8.1&apos;, revision: &apos;6e95a6684b&apos;, time: &apos;2017-12-01T18:33:54.468Z&apos;
+System info: host: &apos;NSL-6578&apos;, ip: &apos;10.95.1.46&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 103.0.1264.37, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:51608}, msedge: {msedgedriverVersion: 102.0.1245.33 (41285f1c5672..., userDataDir: C:\Users\KATYAY~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 032195e0160251366422f872b9f9fa6a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at pages.Common.searchProduct(Common.java:33)
+	at base.TestSctript.searching_products(TestSctript.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -306,7 +321,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Assesment\AssesmentByKatyayan\suites\testng.xml</span>
+            <span class="header-content">C:\Assesment\TestNGAssesmentByKatyayan\suites\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -388,48 +403,48 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Homepage')
 data.setCell(0, 2, 'base.TestSctript')
-data.setCell(0, 3, 13740);
+data.setCell(0, 3, 2370);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Homepage')
 data.setCell(1, 2, 'base.TestSctript')
-data.setCell(1, 3, 2086);
+data.setCell(1, 3, 2107);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'searching_products')
 data.setCell(2, 2, 'base.TestSctript')
-data.setCell(2, 3, 917);
+data.setCell(2, 3, 577);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'searching_products')
 data.setCell(3, 2, 'base.TestSctript')
-data.setCell(3, 3, 672);
+data.setCell(3, 3, 549);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'searching_products')
 data.setCell(4, 2, 'base.TestSctript')
-data.setCell(4, 3, 569);
+data.setCell(4, 3, 372);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'searching_products')
 data.setCell(5, 2, 'base.TestSctript')
-data.setCell(5, 3, 481);
+data.setCell(5, 3, 358);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'searching_products')
 data.setCell(6, 2, 'base.TestSctript')
-data.setCell(6, 3, 231);
+data.setCell(6, 3, 73);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'searching_products')
 data.setCell(7, 2, 'base.TestSctript')
-data.setCell(7, 3, 73);
+data.setCell(7, 3, 53);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'searching_products')
 data.setCell(8, 2, 'base.TestSctript')
-data.setCell(8, 3, 56);
+data.setCell(8, 3, 53);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'searching_products')
 data.setCell(9, 2, 'base.TestSctript')
-data.setCell(9, 3, 48);
+data.setCell(9, 3, 52);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -457,120 +472,112 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">base.TestSctript</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setUp(browserName1)</span>
+                <span class="method-name">beforeClass(browserName1)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">5901 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">searching_products(Watches)</span>
-                <span class="method-start">5921 ms</span>
+                <span class="method-start">6688 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=searching_products status=SUCCESS method=TestSctript.searching_products(java.lang.S...)</span>
-                <span class="method-start">6600 ms</span>
+                <span class="method-start">7269 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searching_products(Caps)</span>
-                <span class="method-start">6603 ms</span>
+                <span class="method-start">7271 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.S...)</span>
-                <span class="method-start">7089 ms</span>
+                <span class="method-start">7631 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searching_products(Kurti)</span>
-                <span class="method-start">7461 ms</span>
+                <span class="method-start">7834 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.S...)</span>
-                <span class="method-start">7539 ms</span>
+                <span class="method-start">7910 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searching_products(Saree)</span>
-                <span class="method-start">7871 ms</span>
+                <span class="method-start">8263 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.S...)</span>
-                <span class="method-start">7927 ms</span>
+                <span class="method-start">8318 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Homepage</span>
-                <span class="method-start">8189 ms</span>
+                <span class="method-start">8697 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=Homepage status=SUCCESS method=TestSctript.Homepage()[pri:2, instance:base.TestSctr...)</span>
+                <span class="method-start">10806 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">10275 ms</span>
+                <span class="method-start">10807 ms</span>
               </div> <!-- configuration-class after -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=Homepage status=SUCCESS method=TestSctript.Homepage()[pri:2, instance:base.TestSctr...)</span>
-                <span class="method-start">10275 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-test before">
-                <span class="method-name">setUp(browserName2)</span>
-                <span class="method-start">10812 ms</span>
+                <span class="method-name">beforeClass(browserName2)</span>
+                <span class="method-start">11341 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">17877 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">searching_products(Watches)</span>
-                <span class="method-start">17878 ms</span>
+                <span class="method-start">17896 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=searching_products status=SUCCESS method=TestSctript.searching_products(java.lang.S...)</span>
-                <span class="method-start">18797 ms</span>
+                <span class="method-start">18446 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searching_products(Caps)</span>
-                <span class="method-start">18799 ms</span>
+                <span class="method-start">18447 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.S...)</span>
-                <span class="method-start">19370 ms</span>
+                <span class="method-start">18822 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searching_products(Kurti)</span>
-                <span class="method-start">19521 ms</span>
+                <span class="method-start">19004 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.S...)</span>
-                <span class="method-start">19757 ms</span>
+                <span class="method-start">19060 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">searching_products(Saree)</span>
-                <span class="method-start">20116 ms</span>
+                <span class="method-start">19217 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=searching_products status=FAILURE method=TestSctript.searching_products(java.lang.S...)</span>
-                <span class="method-start">20164 ms</span>
+                <span class="method-start">19272 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">Homepage</span>
-                <span class="method-start">20434 ms</span>
+                <span class="method-start">19440 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=Homepage status=SUCCESS method=TestSctript.Homepage()[pri:2, instance:base.TestSctr...)</span>
-                <span class="method-start">34176 ms</span>
+                <span class="method-start">21813 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">34177 ms</span>
+                <span class="method-start">21814 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

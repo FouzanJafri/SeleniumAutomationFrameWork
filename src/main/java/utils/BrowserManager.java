@@ -7,7 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 public class BrowserManager {
 	public static WebDriver setProperty(WebDriver driver, String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty(Constant.ChromeDriverKey, Constant.ChromeDriverPath);
+			System.setProperty(Constant.ChromeDriverKey, Constant.ChromeDriverPath2);
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
 		} else if (browser.equalsIgnoreCase("edge")) {
