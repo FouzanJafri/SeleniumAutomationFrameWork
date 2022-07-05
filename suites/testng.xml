@@ -10,10 +10,4 @@
 			<class name="base.TestSctript" />
 		</classes>
 	</test> <!-- Test -->
-	<test name="Test2">
-		<parameter name="browser" value="browserName2"></parameter>
-		<classes>
-			<class name="base.TestSctript" />
-		</classes>
-	</test> <!-- Test2 -->
 </suite> <!-- Suite -->
