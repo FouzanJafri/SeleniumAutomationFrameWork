@@ -1,0 +1,64 @@
+package pages;
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import utils.BrowserManager;
+import utils.ConfigurationReader;
+
+public class Prerequisite {
+	public static WebDriver driver;
+	public static WebElement element;
+
+	public static void openURL(String browser) throws IOException {
+		driver = BrowserManager.setProperty(driver, ConfigurationReader.readbrowserName(browser));
+		driver.get(ConfigurationReader.readbaseURL());
+	}
+
+	public static WebElement usernameField(WebDriver driver) {
+		String id = "Input_emailVal";
+		element = driver.findElement(By.id(id));
+		return element;
+	}
+
+	public static WebElement passwordField(WebDriver driver) {
+		String id = "Input_PasswordVal";
+		element = driver.findElement(By.id(id));
+		return element;
+	}
+
+	public static WebElement loginbtn(WebDriver driver) {
+		String xPath = "//button[@type='submit']";
+		element = driver.findElement(By.xpath(xPath));
+		return element;
+	}
+
+	public static void enterUsername() throws IOException {
+		Actions actn = new Actions(driver);
+		actn.moveToElement(Prerequisite.usernameField(driver)).click();
+		Prerequisite.usernameField(driver).sendKeys(ConfigurationReader.username());
+	}
+
+	public static void enterPassword() throws IOException {
+		Actions actn = new Actions(driver);
+		actn.moveToElement(Prerequisite.passwordField(driver)).click();
+		Prerequisite.passwordField(driver).sendKeys(ConfigurationReader.password());
+	}
+
+	public static void login() {
+		Actions actn = new Actions(driver);
+		actn.moveToElement(Prerequisite.loginbtn(driver));
+		Prerequisite.loginbtn(driver).click();
+
+	}
+
+}
