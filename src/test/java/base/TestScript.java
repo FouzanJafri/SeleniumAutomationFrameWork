@@ -14,7 +14,7 @@ public class TestScript extends Report {
 	@Test(priority=0)
 	public void prerequisite() throws IOException {
 		report = ExtentReport.init();
-		logger = report.startTest("ALM User Story 9");
+		logger = report.startTest("ALM automation");
 
 		Prerequisite.enterUsername();
 		Prerequisite.enterPassword();
