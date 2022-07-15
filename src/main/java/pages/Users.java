@@ -9,7 +9,7 @@ public class Users {
 	public static WebElement element;
 
 	public static WebElement createUser(WebDriver driver) {
-		String xPath = "//div[@id='b10-Content']/i";
+		String xPath = "//div[@id='b5-Column5']/div/a[4]";
 		element = driver.findElement(By.xpath(xPath));
 		return element;
 	}

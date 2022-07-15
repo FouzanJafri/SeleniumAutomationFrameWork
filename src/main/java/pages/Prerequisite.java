@@ -44,13 +44,15 @@ public class Prerequisite {
 
 	public static void enterUsername() throws IOException {
 		Actions actn = new Actions(driver);
-		actn.moveToElement(Prerequisite.usernameField(driver)).click();
+		actn.moveToElement(Prerequisite.usernameField(driver)).click().perform();
+		Prerequisite.usernameField(driver).clear();
 		Prerequisite.usernameField(driver).sendKeys(ConfigurationReader.username());
 	}
 
 	public static void enterPassword() throws IOException {
 		Actions actn = new Actions(driver);
-		actn.moveToElement(Prerequisite.passwordField(driver)).click();
+		actn.moveToElement(Prerequisite.passwordField(driver)).click().perform();
+		Prerequisite.passwordField(driver).clear();
 		Prerequisite.passwordField(driver).sendKeys(ConfigurationReader.password());
 	}
 
@@ -58,7 +60,36 @@ public class Prerequisite {
 		Actions actn = new Actions(driver);
 		actn.moveToElement(Prerequisite.loginbtn(driver));
 		Prerequisite.loginbtn(driver).click();
-
+	}
+	
+	public static void LOGINGOO() throws IOException {
+	
+		String expected = "Dashboard";
+	       String actual = driver.getTitle();
+	 
+//	       while(!expected.equals(actual)) {
+//	           driver.findElement(By.xpath("//input[@type=\"email\"]")).clear();
+//	           driver.findElement(By.xpath("//input[@type=\"password\"]")).clear();
+//	           driver.findElement(By.xpath("//input[@type=\"email\"]")).sendKeys("praghuwanshi@netlink.com");
+//	           driver.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("123456");
+//	           element = driver.findElement(By.xpath("//button[@type=\"submit\"]")); 
+//	              Actions act = new Actions(driver);
+//	              act.moveToElement(element).click().perform();
+	    	   Prerequisite.enterUsername();
+	    	   Prerequisite.enterPassword();
+	    	   Prerequisite.login();
+//	       }
+	}
+	
+	public static void WebdriverWait(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	
+	
+	public static void CloseDriver() {
+		driver.close();
+		
 	}
 
 }

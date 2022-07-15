@@ -50,4 +50,13 @@ public class ConfigurationReader {
 
 	}
 
+	public static String readDOBDate(String browser) throws IOException {
+		File file = new File("src/main/resources/configuration/configuration.properties");
+		FileInputStream Fis = new FileInputStream(file);
+		Properties prop = new Properties();
+		prop.load(Fis);
+		return prop.getProperty(browser);
+
+	}
+
 }

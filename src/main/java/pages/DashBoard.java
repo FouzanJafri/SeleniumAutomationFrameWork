@@ -1,12 +1,14 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class DashBoard {
 	public static WebElement element;
 	public static WebDriver driver = Prerequisite.driver;
+	public static JavascriptExecutor js = ((JavascriptExecutor)driver);
 
 	public static WebElement userButton(WebDriver driver) {
 		String xPath = "//a[@href='/ALM/Users']";
@@ -26,5 +28,6 @@ public class DashBoard {
 		DashBoard.master(driver).click();
 		DashBoard.userButton(driver).click();
 	}
+
 
 }

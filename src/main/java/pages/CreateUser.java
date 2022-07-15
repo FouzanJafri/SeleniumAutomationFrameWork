@@ -1,14 +1,24 @@
 package pages;
 
+import java.io.IOException;
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import utils.ConfigurationReader;
 
 public class CreateUser {
 	public static WebDriver driver = Users.driver;
 	public static WebElement element;
-	WebDriverWait wait =  new WebDriverWait(driver, 7);
+	public static WebDriverWait wait =  new WebDriverWait(driver, 7);
+	public static JavascriptExecutor js =  ((JavascriptExecutor) driver);
 
 
 	public static WebElement pageTitleSpan(WebDriver driver) {
@@ -141,4 +151,64 @@ public class CreateUser {
 		return title;
 	}
 
-}
+	public static WebElement DOBInputFeild() {
+		return driver.findElement(By.xpath("//input[@id='Input_BirthDate']"));
+	}
+	public static void BirthDateSend() throws IOException {
+		CreateUser.DOBInputFeild().sendKeys(ConfigurationReader.readDOBDate("dob"));
+	}
+
+	
+	public static String BirthDateErrorValidation() {
+		return driver.findElement(By.xpath("//input[@id='Input_BirthDate']/following-sibling::span")).getText();
+	}
+	public static void JoinDateSend() {
+		CreateUser.verifyJoiningDateFieldPresence(driver).sendKeys("07022022");
+	}
+
+	
+	public static String JoinDateErrorValidation() {
+		return driver.findElement(By.xpath("//input[@id='Input_JoiningDatel']/following-sibling::span")).getText();
+	}
+	public static WebElement SaveBTN() {
+		return driver.findElement(By.xpath("//button[text()='Save']"));
+	}
+	public static void SaveBtn_Click() {
+		js.executeScript("arguments[0].scrollIntoView();", CreateUser.SaveBTN());
+		CreateUser.SaveBTN().click();
+	}
+	
+	public static void javascriptScroll(WebElement element) {
+		js.executeScript("arguments[0].scrollIntoView();", element);
+	}
+	public static void FutureDateValidation() {
+		try {
+			CreateUser.DOBInputFeild().sendKeys(ConfigurationReader.readDOBDate("Futuredob"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void Refresh() {
+		driver.navigate().refresh();
+	}
+
+	public static WebElement Status() {
+		return driver.findElement(By.xpath("//input[@id='Status_switch']"));
+	}
+	
+	public static WebElement RoleFeild() {
+		return driver.findElement(By.xpath("//div[@id='b6-DropdownTags']/div"));
+	}
+	public static void RoleFeildClick() {
+		Actions acc = new Actions(driver);
+		acc.click(CreateUser.RoleFeild()).perform();
+	}
+	public static List<WebElement> RoleFeildList() {
+		return driver.findElements(By.xpath("//div[text() ='Select Roles']"));
+	}
+	public static WebElement SearchInputInRoleDrop() {
+		return driver.findElement(By.xpath("//input[@class='vscomp-search-input']"));
+	}
+	
+	
+	}

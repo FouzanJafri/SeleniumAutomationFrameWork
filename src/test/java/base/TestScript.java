@@ -11,7 +11,7 @@ import pages.Users;
 import utils.ExtentReport;
 
 public class TestScript extends Report {
-	@Test(priority = 0)
+	@Test(enabled = false)
 	public void prerequisite() throws IOException {
 		report = ExtentReport.init();
 		logger = report.startTest("ALM automation");
@@ -21,7 +21,7 @@ public class TestScript extends Report {
 		Prerequisite.login();
 	}
 
-	@Test(dependsOnMethods = { "prerequisite" }, priority = 1)
+	@Test
 	public void TC_001() throws IOException {
 		DashBoard.clickOnUser();
 		Users.clickOnCreateUser();
@@ -42,8 +42,7 @@ public class TestScript extends Report {
 
 	}
 
-	public void TC_003() {
 
-	}
+
 
 }
