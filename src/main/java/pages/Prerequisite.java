@@ -31,7 +31,7 @@ public class Prerequisite {
 	}
 
 	public static WebElement passwordField(WebDriver driver) {
-		String id = "Input_PasswordVal";
+		String id = "input_password";
 		element = driver.findElement(By.id(id));
 		return element;
 	}
@@ -57,17 +57,19 @@ public class Prerequisite {
 	}
 
 	public static void login() {
+		//Prerequisite.ClickAbleWebdriverWait(Prerequisite.loginbtn(driver));
 		Actions actn = new Actions(driver);
 		actn.moveToElement(Prerequisite.loginbtn(driver));
 		Prerequisite.loginbtn(driver).click();
+		//actn.click(Prerequisite.loginbtn(driver)).perform();
 	}
 	
-	public static void LOGINGOO() throws IOException {
+	public static void LOGINGOO() throws IOException, InterruptedException {
 	
 		String expected = "Dashboard";
 	       String actual = driver.getTitle();
 	 
-//	       while(!expected.equals(actual)) {
+   //    while(!expected.equals(actual)) {
 //	           driver.findElement(By.xpath("//input[@type=\"email\"]")).clear();
 //	           driver.findElement(By.xpath("//input[@type=\"password\"]")).clear();
 //	           driver.findElement(By.xpath("//input[@type=\"email\"]")).sendKeys("praghuwanshi@netlink.com");
@@ -75,15 +77,27 @@ public class Prerequisite {
 //	           element = driver.findElement(By.xpath("//button[@type=\"submit\"]")); 
 //	              Actions act = new Actions(driver);
 //	              act.moveToElement(element).click().perform();
-	    	   Prerequisite.enterUsername();
+
+//    	   Prerequisite.usernameField(driver).clear();
+//    	   Prerequisite.passwordField(driver).clear();
+    	   		Prerequisite.enterUsername();
 	    	   Prerequisite.enterPassword();
-	    	   Prerequisite.login();
-//	       }
+//	    	   Prerequisite.login();
+	           element = driver.findElement(By.xpath("//button[@type=\"submit\"]")); 
+	           Thread.sleep(2000);
+	              Actions act = new Actions(driver);
+	              act.moveToElement(element).click().perform();
+
+	//       }
 	}
 	
 	public static void WebdriverWait(WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	public static void ClickAbleWebdriverWait(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
 	

@@ -4,9 +4,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import pages.DashBoard;
 import pages.Prerequisite;
-import pages.Users;
 import utils.ExtentReport;
 import utils.Screenshot;
 
@@ -58,11 +56,11 @@ public class Report {
 
 //	@Parameters({ "browser" })
 	@BeforeTest
-	public void beforeClass() throws IOException {
+	public void beforeClass() throws Exception {
 		Prerequisite.openURL("browserName1");
 		report = ExtentReport.init();
 		logger = report.startTest("ALM automation");
-		Prerequisite.LOGINGOO();
+		 Prerequisite.LOGINGOO();
 	}
 
 	@AfterClass
@@ -70,6 +68,7 @@ public class Report {
 		report.endTest(logger);
 		report.flush();
 	}
+
 	@AfterTest
 	public void afterTest() {
 		Prerequisite.CloseDriver();

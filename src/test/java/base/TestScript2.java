@@ -53,16 +53,38 @@ public class TestScript2 extends Report {
 		CreateUser.Refresh();
 		CreateUser.javascriptScroll(CreateUser.RoleFeild());
 		CreateUser.RoleFeildClick();
-		//Prerequisite.WebdriverWait(CreateUser.SearchInputInRoleDrop());
+		Prerequisite.WebdriverWait(CreateUser.SearchInputInRoleDrop());
 		CreateUser.javascriptScroll(CreateUser.SearchInputInRoleDrop());
 		Assert.assertEquals(CreateUser.SearchInputInRoleDrop().isEnabled(), true);
 	}
 	
 	@Test(priority = 7)
 	public void TC_044() {
-		System.out.println(CreateUser.RoleFeildList().toString());
-//		Assert.assertEquals(CreateUser.SearchInputInRoleDrop().isEnabled(), true);
+
+		CreateUser.Refresh();
+		CreateUser.javascriptScroll(CreateUser.RoleFeild());
+		CreateUser.RoleFeildClick();
+		Prerequisite.WebdriverWait(CreateUser.SearchInputInRoleDrop());
+		CreateUser.javascriptScroll(CreateUser.RoleFeildListTraineOption());
+		Prerequisite.WebdriverWait(CreateUser.RoleFeildListTraineOption());
+		CreateUser.RoleFeildListCapture();
+		System.out.println(CreateUser.actual);
+		Assert.assertEquals(CreateUser.actual, CreateUser.ExpectedListTRoleFeild());
 	}
 		
+	@Test(priority = 8)
+	public void TC_045() {
+
+		CreateUser.Refresh();
+		CreateUser.javascriptScroll(CreateUser.RoleFeild());
+		CreateUser.RoleFeildClick();
+		Prerequisite.WebdriverWait(CreateUser.SearchInputInRoleDrop());
+		CreateUser.javascriptScroll(CreateUser.RoleFeildListTraineOption());
+		Prerequisite.WebdriverWait(CreateUser.RoleFeildListTraineOption());
+		CreateUser.RoleFeildListCapture();
+		System.out.println(CreateUser.actual);
+		Assert.assertEquals(CreateUser.actual, CreateUser.ExpectedListTRoleFeild());
+	}
+
 	
 }

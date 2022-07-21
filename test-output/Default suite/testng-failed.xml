@@ -6,8 +6,8 @@
       <class name="base.TestScript2">
         <methods>
           <include name="beforeClass"/>
+          <include name="TC_044"/>
           <include name="afterTest"/>
-          <include name="TC_043"/>
           <include name="afterMethod"/>
           <include name="afterClass"/>
         </methods>

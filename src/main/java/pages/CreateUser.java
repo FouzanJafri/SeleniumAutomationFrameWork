@@ -1,6 +1,8 @@
 package pages;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -19,6 +21,7 @@ public class CreateUser {
 	public static WebElement element;
 	public static WebDriverWait wait =  new WebDriverWait(driver, 7);
 	public static JavascriptExecutor js =  ((JavascriptExecutor) driver);
+	public static List<String> actual = new ArrayList<>();
 
 
 	public static WebElement pageTitleSpan(WebDriver driver) {
@@ -204,11 +207,37 @@ public class CreateUser {
 		acc.click(CreateUser.RoleFeild()).perform();
 	}
 	public static List<WebElement> RoleFeildList() {
-		return driver.findElements(By.xpath("//div[text() ='Select Roles']"));
+		return driver.findElements(By.xpath("//div[@id='$b6']/div/div/div[2]/div/div[2]/div[2]/div/div"));
 	}
+
+	public static void RoleFeildListCapture() {
+		for(WebElement ele:CreateUser.RoleFeildList()) {
+			Actions acc = new Actions(driver);
+			Actions act= acc.moveToElement(ele);
+			act.click().perform();
+			String elementText = ele.getText();
+			actual.add(elementText);
+		}
+	}
+	
+//	public static List<String> RoleListActualList() {
+//		List<String> actual1 = actual;
+//		return actual;
+//	}
 	public static WebElement SearchInputInRoleDrop() {
 		return driver.findElement(By.xpath("//input[@class='vscomp-search-input']"));
 	}
+	public static WebElement RoleFeildListTraineOption() {
+		return driver.findElement(By.xpath("//div[@id='$b6']/div/div/div[2]/div/div[2]/div[2]/div/div[4]"));
+	}
+	public static List<String> ExpectedListTRoleFeild() {
+		List<String> exe =  new ArrayList<>();
+		exe.add("HR");
+		exe.add("Manager");
+		exe.add("Trainee");
+		exe.add("Trainer");
+		return exe;
+	}
 	
-	
+
 	}
